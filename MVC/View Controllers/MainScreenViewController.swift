@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainScreenViewController.swift
 //  MVC
 //
 //  Created by Olegio on 26.08.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E0BCC56C28B927C9002049C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCC56B28B927C9002049C4 /* AppDelegate.swift */; };
 		E0BCC56E28B927C9002049C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCC56D28B927C9002049C4 /* SceneDelegate.swift */; };
-		E0BCC57028B927C9002049C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCC56F28B927C9002049C4 /* ViewController.swift */; };
+		E0BCC57028B927C9002049C4 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCC56F28B927C9002049C4 /* MainScreenViewController.swift */; };
 		E0BCC57328B927C9002049C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BCC57128B927C9002049C4 /* Main.storyboard */; };
 		E0BCC57528B927CA002049C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0BCC57428B927CA002049C4 /* Assets.xcassets */; };
 		E0BCC57828B927CA002049C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BCC57628B927CA002049C4 /* LaunchScreen.storyboard */; };
+		E0BCC58628B9334B002049C4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCC58528B9334B002049C4 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0BCC56828B927C9002049C4 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BCC56B28B927C9002049C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0BCC56D28B927C9002049C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0BCC56F28B927C9002049C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0BCC56F28B927C9002049C4 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		E0BCC57228B927C9002049C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0BCC57428B927CA002049C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0BCC57728B927CA002049C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0BCC57928B927CA002049C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0BCC58528B9334B002049C4 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,7 @@
 		E0BCC58028B92866002049C4 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E0BCC56F28B927C9002049C4 /* ViewController.swift */,
+				E0BCC56F28B927C9002049C4 /* MainScreenViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -104,6 +106,7 @@
 		E0BCC58328B928F5002049C4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E0BCC58528B9334B002049C4 /* Restaurant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,7 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0BCC57028B927C9002049C4 /* ViewController.swift in Sources */,
+				E0BCC58628B9334B002049C4 /* Restaurant.swift in Sources */,
+				E0BCC57028B927C9002049C4 /* MainScreenViewController.swift in Sources */,
 				E0BCC56C28B927C9002049C4 /* AppDelegate.swift in Sources */,
 				E0BCC56E28B927C9002049C4 /* SceneDelegate.swift in Sources */,
 			);
@@ -343,8 +347,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +360,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -371,8 +377,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
