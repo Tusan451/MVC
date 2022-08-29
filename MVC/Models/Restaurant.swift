@@ -15,5 +15,5 @@ struct Restaurant {
     let cost: String
     let adress: String
     let image: UIImage
-    
+    let info: String
 }

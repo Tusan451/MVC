@@ -9,11 +9,15 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    
+    let cellId = "RestaurantCell"
+    let setupRestaurants = DataManger()
+    let cellController = CellController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
     }
-
-
 }
 
