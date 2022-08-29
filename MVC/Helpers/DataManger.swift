@@ -10,13 +10,12 @@ import UIKit
 
 class DataManger {
     
-    var restaurants = [Restaurant]()
+    static let shared = DataManger()
     
-    init() {
-        setupRestaurants()
-    }
-    
-    func setupRestaurants() {
+    func setupRestaurants() -> [Restaurant] {
+        
+        var restaurants = [Restaurant]()
+        
         let firstRestaurant =
         Restaurant(name: "Баренц",
                    rating: "4.5",
@@ -58,5 +57,7 @@ class DataManger {
         restaurants.append(thirdRestaurant)
         restaurants.append(fourthRestaurant)
         restaurants.append(fifthRestaurant)
+        
+        return restaurants
     }
 }

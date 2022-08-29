@@ -9,12 +9,12 @@ import UIKit
 
 extension MainScreenViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return setupRestaurants.restaurants.count
+        return restaurants.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! RestaurantTableViewCell
-        let restaurant = setupRestaurants.restaurants[indexPath.row]
+        let restaurant = restaurants[indexPath.row]
         
         cellController.configureTheCell(cell, with: restaurant)
         

@@ -10,6 +10,7 @@ import UIKit
 class MainScreenViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
+    var restaurants: [Restaurant] = []
     
     let cellId = "RestaurantCell"
     let setupRestaurants = DataManger()
@@ -18,6 +19,7 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        restaurants = DataManger.shared.setupRestaurants()
     }
 }
 
