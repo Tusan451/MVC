@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E07FDB4E28BD0C70000EE8C9 /* DataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07FDB4D28BD0C70000EE8C9 /* DataManger.swift */; };
+		E07FDB5028BD118A000EE8C9 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07FDB4F28BD118A000EE8C9 /* RestaurantTableViewCell.swift */; };
 		E0BCC56C28B927C9002049C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCC56B28B927C9002049C4 /* AppDelegate.swift */; };
 		E0BCC56E28B927C9002049C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCC56D28B927C9002049C4 /* SceneDelegate.swift */; };
 		E0BCC57028B927C9002049C4 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCC56F28B927C9002049C4 /* MainScreenViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E07FDB4D28BD0C70000EE8C9 /* DataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManger.swift; sourceTree = "<group>"; };
+		E07FDB4F28BD118A000EE8C9 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		E0BCC56828B927C9002049C4 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BCC56B28B927C9002049C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0BCC56D28B927C9002049C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				E0BCC58528B9334B002049C4 /* Restaurant.swift */,
+				E07FDB4F28BD118A000EE8C9 /* RestaurantTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		E0BCC58428B92934002049C4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E07FDB4D28BD0C70000EE8C9 /* DataManger.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				E0BCC58628B9334B002049C4 /* Restaurant.swift in Sources */,
 				E0BCC57028B927C9002049C4 /* MainScreenViewController.swift in Sources */,
 				E0BCC56C28B927C9002049C4 /* AppDelegate.swift in Sources */,
+				E07FDB4E28BD0C70000EE8C9 /* DataManger.swift in Sources */,
+				E07FDB5028BD118A000EE8C9 /* RestaurantTableViewCell.swift in Sources */,
 				E0BCC56E28B927C9002049C4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
