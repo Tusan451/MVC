@@ -12,7 +12,7 @@ class MainScreenViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     var restaurants: [Restaurant] = []
     
-    let cellId = "RestaurantCell"
+    let cellId = "RestaurantTableViewCell"
     let setupRestaurants = DataManger()
     let cellController = CellController()
     

@@ -16,7 +16,11 @@ extension MainScreenViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! RestaurantTableViewCell
         let restaurant = restaurants[indexPath.row]
         
-        cellController.configureTheCell(cell, with: restaurant)
+        cell.restaurantName.text = restaurant.name
+        cell.restaurantRating.text = restaurant.rating
+        cell.restaurantCost.text = restaurant.cost
+        cell.restaurantAddress.text = restaurant.adress
+        cell.restaurantImage.image = restaurant.image
         
         return cell
     }
