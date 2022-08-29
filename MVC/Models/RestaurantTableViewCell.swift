@@ -9,6 +9,10 @@ import UIKit
 
 class RestaurantTableViewCell: UITableViewCell {
 
-    
+    @IBOutlet var restaurantImage: UIImageView!
+    @IBOutlet var restaurantName: UILabel!
+    @IBOutlet var restaurantRating: UILabel!
+    @IBOutlet var restaurantCost: UILabel!
+    @IBOutlet var restaurantAddress: UILabel!
     
 }
