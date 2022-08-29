@@ -193,6 +193,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ресторан" id="nAG-xc-lIf"/>
+                    <connections>
+                        <outlet property="restaurantAddress" destination="lgO-gg-rbR" id="eBI-Jj-4tv"/>
+                        <outlet property="restaurantCost" destination="fJO-va-4Ed" id="nZk-2G-6Gl"/>
+                        <outlet property="restaurantImage" destination="Tfy-Zd-5yQ" id="S9B-fc-cVY"/>
+                        <outlet property="restaurantInfo" destination="3fv-nN-2wQ" id="q4d-6M-UAs"/>
+                        <outlet property="restaurantName" destination="gg4-Sm-BSV" id="hfq-7S-fX6"/>
+                        <outlet property="restaurantRating" destination="w25-Hv-aDz" id="umP-nN-YLh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XV1-sP-ce0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
